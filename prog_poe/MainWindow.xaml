@@ -23,6 +23,23 @@
             <!-- Lecturer Tab -->
             <TabItem Header="Lecturer">
                 <StackPanel Margin="10">
+                    <TextBlock Text="Submit Your Claim" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="Hours Worked:" Width="150" VerticalAlignment="Center"/>
+                        <TextBox x:Name="HoursWorkedTextBox" Width="200" Height="30"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="Hourly Rate:" Width="150" VerticalAlignment="Center"/>
+                        <TextBox x:Name="HourlyRateTextBox" Width="200" Height="30"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="Notes:" Width="150" VerticalAlignment="Center"/>
+                        <TextBox x:Name="NotesTextBox" Width="200" Height="60" TextWrapping="Wrap" AcceptsReturn="True"/>
+                    </StackPanel>
+
                     <Button Content="Submit Claim" 
                             Margin="5" 
                             Padding="10" 
@@ -48,6 +65,7 @@
             <!-- Coordinator Tab -->
             <TabItem Header="Coordinator">
                 <StackPanel Margin="10">
+                    <TextBlock Text="Verify Claims" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
                     <Button Content="Verify Claims" 
                             Margin="5" 
                             Padding="10" 
@@ -63,6 +81,7 @@
             <!-- Manager Tab -->
             <TabItem Header="Manager">
                 <StackPanel Margin="10">
+                    <TextBlock Text="Approve Claims" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
                     <Button Content="Approve Claims" 
                             Margin="5" 
                             Padding="10" 
